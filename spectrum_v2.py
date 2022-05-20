@@ -3,7 +3,7 @@ import cmath
 import numpy
 from scipy.special import lambertw
 
-# Spectrum of a network with delay (control region)
+# Spectrum of a network with delay (control region using the LambertW function)
 
 # parameters of Linearized system
 a = 0.01
