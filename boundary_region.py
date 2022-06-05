@@ -22,13 +22,11 @@ island_max = math.ceil(b*m * (1-math.cos(math.pi/(2*m))) / (2*a*math.pi) - 1/2)
 # minimum and maximum values for kappa (coupling parameter):
 if eta == 0:
     k_min = a / (2*d*delta)
+    k_max = 10 #manually change this number if k_max is larger
 else:
     k_min = (-a*delta + a * math.sqrt(delta**2 + eta**2)) / (d * eta**2)
-    
-if eta != 0:
     k_max = b / (d*eta)
-else: 
-    k_max = 10 #manually change this number if k_max is larger
+
 
 # define the bifurcations curves:
 def tau_1(j, k):
